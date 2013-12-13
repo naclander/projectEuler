@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+#define TARGET 4000000
+
 //Fib sequence using a for loop
 //I started the sequence on the third number, which is why the sum
 //begins at 2.
@@ -14,7 +16,7 @@ int main(){
   for(i = 2;;i++){
     current = last + last_last;
 
-	if(current > 4000000){
+	if(current > TARGET){
 	  break;
 	}
 
