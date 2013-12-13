@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+//Simple for loop checking if the iterator is divisible by 3 or 5, and if so
+//adds the value to sum variable.
+
 int main(){
   int i;
   int sum = 0;
