@@ -6,7 +6,7 @@
 
 int is_prime(int num){
   int i;
-  for(i = 2; i <= num/2; i++){
+  for(i = 2; i*i <= num; i++){
     if(num%i == 0){
 	  return 0;
 	}
