@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#include<stdlib.h> //for atoi
 
 //I feel like I cheated a little bit by storing the 1000 digit int as a strig
 //but I don't think C has a data type that big. 
@@ -23,9 +22,9 @@ int get_sum(char * num, int end){
 }
 
 int main(){
+  int i;
   char num[] = TARGET;
   int max_sum = 0;
-  int i;
   for(i = 4; i < strlen(num); i++){
     int current_sum = get_sum(num + i,4);
     max_sum = max(current_sum,max_sum);
