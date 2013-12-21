@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 #define TARGET 1000000
 
@@ -8,10 +7,6 @@
 //long long int.
 
 get_c_seq(unsigned long long int seq_start){
-	if(seq_start < 0){
-		printf("neg seq_start\n");
-		exit(1);
-	}
 	if(seq_start == 1){
 		return(0);
 	}
