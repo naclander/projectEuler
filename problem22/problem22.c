@@ -50,6 +50,7 @@ int main(){
 	file = fopen("names.txt", "r");
 	if(!file){
 		printf("Error opening file\n");
+		exit(EXIT_FAILURE);
 	}
 	char c;
 	int inside_string = 0;
